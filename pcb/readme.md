@@ -62,7 +62,11 @@ a faster one €6.94
 - [Opto coupler](https://www.aliexpress.com/item/1005006281381268.html).
   I did not get this one, had them on stock.
   
-- Several resistors, LEDs, transistors, and a double pole double throw switch.
+- [Mute button](https://www.aliexpress.com/item/32699676258.html).
+  I used the "self locking" (blue) with 2mm pitch. 
+  It is a double pole, double throw; 40 switches for €2.49.
+  
+- Several resistors, LEDs, transistors, one capacitor.
 
 
 (end)
