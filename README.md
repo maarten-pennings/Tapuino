@@ -8,26 +8,39 @@ My take on the famous Tapuino; "The $20 C64 Tape Emulator".
 This project is a clone of [Tapuino ](https://github.com/sweetlilmre/tapuino) by "sweetlilmre" (Peter Edwards).
 
 In a nutshell: Tapuino is an Arduino Nano, that together with an SD card reader and a 
-simple user interface (LCD screen and 4 buttons) implement a sound recorder/player. 
+simple user interface (LCD screen and 4 buttons) implements a sound recorder/player. 
 The SD card stores [TAP](http://unusedino.de/ec64/technical/formats/tap.html) files,
-I think of them a WAV files. Tapuino plugs into the cassette port of the C64, which 
+I think of them as WAV files. Tapuino plugs into the cassette port of the C64, which 
 supplies 5V to Tapuino.
 
-The UI let's you browse through the SD card, selecting a TAP file.
+The UI on the Tapuino let's you browse through the SD card, selecting a TAP file.
 When the users types `LOAD` on the C64, the C64 sitches on the MOTOR pin on the cassette 
-port, the Arduino sees that and starts playing the TAP file on the READ pin.
+port, the Arduino sees that and starts playing the TAP file on the READ pin of the same
+cassette port.
 
 It is also possible to type `SAVE` on the C64. In this case the Arduino takes the signal
-from the WRITE pin on the cassette port and converts that to a TAP file on a fixed
+from the WRITE pin on the cassette port and converts that to a TAP file in a fixed
 directory of the SD card. One bummer: the user typically types `SAVE "name"`, but since
-the name comes in as beeps on the WRITE pin, this name gets lost. The user had to
-enter a name using the Tapuino GUI (slow) or accept auto-naming (basically a sequence number).
+the name comes in as beeps on the WRITE pin, this name gets lost. The user has to
+enter a name for the file on the SD card using the Tapuino GUI (slow) or accept 
+auto-naming (basically a sequence number). Of course the name in bleeps (TAP file)
+is still the original C64 save name, so that is reported back upon a `LOAD`.
 
-> Warning Peter Edwards writes on his GitHub  
+I do not know if it is a bummer or not, but Tapuino emulates a datasette, it also has
+the speed or the emulated datasette. Quoting [stack exchange](https://retrocomputing.stackexchange.com/questions/16700/did-computer-games-for-commodore-64-really-take-25-minutes-to-load-if-everyth#:~:text=In%20this%20answer%2C%20the%20C64,minutes%20to%20load%2048%20kilobytes)
+"tape data rate is calculated at 55 bytes per second, giving approximately 15 minutes to load 48 kilobytes".
+To make the experience retro, I added a speaker so that I can hear the beeps.
+
+A quick computation: the C64 has 64k or RAM. Most tape games will be smaller than that.
+On a 4 GB SD card (Arduino probably handles up to 32 GB) that would mean 4G/64k or 65536 
+TAP files. Sounds plenty enough. Although the [Tape Archive](https://archive.org/details/Ultimate_Tape_Archive_V4.5) is nearly 20 GB.
+
+> **Warning** Peter Edwards writes on his GitHub  
 > This project is now in maintenance mode and has been superseded by the Tapuino Next
 
 And there is all kind of dangling links already: to his video, to his blog.
-I decided to clone his [firmware](firmware).
+I decided to clone his [firmware](firmware). 
+And I did find a [2014 blog](https://sweetlilmre.blogspot.com/2014/07/tapuino-20-c64-tape-emulator.html)
 
 
 ## PCB
@@ -49,6 +62,11 @@ Nice and big, looking a bit similar to the big switches on the actual datasette.
 
 Due to all dangling links, I was afraid the Tapuino sources might disappear, so 
 I decided to clone the [firmware](firmware).
+
+
+Edit the configuration in [config-user.h](firmware/config-user.h).
+
+There is also runtime options
 
 
 ## Case
