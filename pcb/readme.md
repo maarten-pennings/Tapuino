@@ -10,12 +10,22 @@ Files are stored in their cloud, but you can also download the [source](Tapuino-
 Not sure how many other tools can process those files.
 To be sure, I also exported a [pdf](Tapuino-sch-v1.pdf).
 
+Note that I have two sound "channels" one for recording and one for playback.
+That is a big overkill, but I didn't want to complicate the schematics
+by having two inputs (READ and WRITE pin) to one speaker. It adds a bit of PCB area.
+Cost-wise it is not much of a problem, the entire two-channel solution costs less 
+than 50 cent (35 for the two buzzers, 6 for the mute button and some cents for the
+resistors and transistors). If you don't want sound, you can skip this part of the
+schematics.
 
 ## Layout
 
 Next step is layout, also done in EasyEda. Also here the [source](Tapuino-pcb-v1.json) downloaded from the cloud.
 And the pdf's, not sure how useful that is, one with [top](Tapuino-pcb-v1-top.pdf) view and one with [bottom](Tapuino-pcb-v1-bot.pdf) view.
 
+I tried to follow the layout of the original datasette: big buttons at the front;
+the tape (LCD) in the center; tape counter (2 LEDs) on the center right; nothing and the back 
+except the cable to the C64.
 
 ## Renders
 
@@ -42,16 +52,16 @@ a faster one €6.94
 ## Components
 
 - [Arduino Nano](https://www.aliexpress.com/item/4000310677263.html)
-  with micro USB (maybe I should have gotten USB C). 1 piece for €2.94.
+  with micro USB (maybe I should have gotten USB C). 1 for €2.94.
 
 - [Edge connector](https://www.aliexpress.com/item/33015746310.html);
-  3 pieces for €1.96.
+  3 for €1.96.
 
 - [16x2 LCD with I2C adapter](https://www.aliexpress.com/item/1005006964073869.html).
   I took the blue one. 1 for €2.62.
 
 - [SD card reader module](https://www.aliexpress.com/item/1940216307.html)
-  with 3v3 LDO and level shifters. 1 piece €0.50.
+  with 3v3 LDO and level shifters. 1 for €0.50.
 
 - [BC547 transistor](https://www.aliexpress.com/item/1005007339082012.html);
   100 for €1.33.
@@ -65,7 +75,7 @@ a faster one €6.94
   10 pieces for €1.76.
 
 - [Clicky blue Cherry MX switches](https://www.aliexpress.com/item/1005007052759423.html)
-  30 for €3.63. I hope the are 1 unit wide (0.75 inch or 19.05mm).
+  30 for €3.63. I hope they are 1 unit wide (0.75 inch or 19.05mm).
 
 - [Key caps](https://www.aliexpress.com/item/1005006477890497.html)
   for the Cherry MX switches. 30 pieces for €10.94.
