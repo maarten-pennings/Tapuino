@@ -61,6 +61,12 @@ Instead of using cheap switches, I decided to go for Cherry MX switches.
 Nice and big, looking a bit similar to the big switches on the actual datasette.
 
 
+## Assembly
+
+I hand assembled the PCB. See result in the [assembly](assembly) directory.
+There were some errors in the V1 PCB that had to be patched; see [pcb section](pcb#schematics).
+
+
 ## Software
 
 Due to all dangling links, I was afraid the Tapuino sources might disappear, so 
