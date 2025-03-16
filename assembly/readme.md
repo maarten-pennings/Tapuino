@@ -18,7 +18,7 @@ The LCD switched-on its back light, but showed no characters.
 I uploaded the I2C scanner example from the Arduino IDE, and did not see any device on the I2C bus.
 Attached a logic analyzer, did see the I2C traffic, but the slicer in the logic analyzer did not.
 
-I swapped the SCL and SDA lines on the Arduino.
+Turned out, I swapped the SCL and SDA pins on the Arduino.
 I patched this by swapping the SDA and SCL line towards the LCD; that was relatively straightforward
 to do, because it is connected with a pin header.
 
@@ -48,7 +48,7 @@ Next step was to add the cable with my own printed connector sleeve.
 ![With cable](WithCable.jpg)
 
 
-I did create a 1.5 with the fixes for the schematics bugs.
+I did create a V1.5 of the schematics with the fixes for the bugs.
 
 
 ## Assembly completed
