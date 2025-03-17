@@ -6,6 +6,7 @@ WCHAR ff_convert (	/* Converted character, Returns zero on error */
 	UINT	dir		/* 0: Unicode to OEMCP, 1: OEMCP to Unicode */
 )
 {
+	(void)dir; // unsused
 	return chr;
 }
 

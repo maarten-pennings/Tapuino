@@ -6,7 +6,7 @@
 
 // thanks stack overflow: http://stackoverflow.com/questions/4301471/c-macro-to-test-if-more-than-one-defined
 #if defined(LCD_USE_SSD1306_OLED_MODULE) + defined(LCD_USE_1602_LCD_MODULE) + defined(LCD_USE_SSD131X_OLED_MODULE) != 1
-  #error Ether no or multiple LCD types defined! Have you created your config-user.h file?
+  #error Either no or multiple LCD types defined! Have you created your config-user.h file?
 #endif
 
 #if defined(LCD_USE_SSD1306_OLED_MODULE)
@@ -91,7 +91,7 @@
 #define REC_LED_OFF()       REC_LED_PORT |= _BV(REC_LED_PIN)
 #define REC_LED_ON()        REC_LED_PORT &= ~_BV(REC_LED_PIN)
 
- // comment this line if you are using HW1.0
+// comment this line if you are using HW1.0
 #define KEYS_INPUT_PULLUP
 #define KEYS_READ_PORT      PORTC
 #define KEYS_READ_DDR       DDRC

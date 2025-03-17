@@ -108,6 +108,7 @@ void setup_cycle_timing() {
 
   switch (g_machine_type)
   {
+    default:
     case C64:
       ntsc_cycles_per_second = 1022272;
       pal_cycles_per_second  = 985248;
@@ -381,7 +382,7 @@ int play_file(FILINFO* pfile_info)
   lcd_title_P(S_LOADING);
 
   if (g_invert_signal) {
-    TAPE_READ_LOW();                     // set the signal low
+    TAPE_READ_LOW();                    // set the signal low
   } else {
     TAPE_READ_HIGH();                   // set the signal high
   }
@@ -434,7 +435,7 @@ int play_file(FILINFO* pfile_info)
   f_close(&g_fil);
   
   if (g_invert_signal) {
-    TAPE_READ_LOW();                     // set the signal high
+    TAPE_READ_LOW();                    // set the signal low
   } else {
     TAPE_READ_HIGH();                   // set the signal high
   }
@@ -449,7 +450,7 @@ int play_file(FILINFO* pfile_info)
   // end of load UI indicator
   lcd_busy_spinner();
   
-  // switch off read LED
+  // switch low read signal
   TAPE_READ_LOW();
   
   // prevent leakage of g_cur_command, the standard mechanism is to use get_cur_command() which would clear the global
@@ -653,12 +654,12 @@ int tapuino_hardware_setup(void)
   
   // read is output to C64
   TAPE_READ_DDR |= _BV(TAPE_READ_PIN);
-  // start with tape read LED off
+  // start with tape read signal low
   TAPE_READ_LOW();
   
   // write is input from C64, activate pullups
   TAPE_WRITE_DDR &= ~_BV(TAPE_WRITE_PIN);
-  // no pull-up for now, activate pull-up just before write section, write LED off
+  // no pull-up for now, activate pull-up just before write section, write signal
   TAPE_WRITE_PORT &= ~_BV(TAPE_WRITE_PIN);
   
   // motor is input from C64, activate pullups

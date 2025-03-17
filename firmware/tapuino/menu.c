@@ -263,7 +263,7 @@ void handle_record_mode(FILINFO* pfile_info) {
   }
   
   while (1) {
-    cur_mode = handle_select_mode(S_SELECT_RECORD_MODE, ppitems, 2, cur_mode);
+    cur_mode = handle_select_mode(S_SELECT_RECORD_MODE, ppitems, sizeof(ppitems)/sizeof(ppitems[0]), cur_mode);
     switch (cur_mode) {
       case REC_MODE_AUTO:
         handle_record_mode_ready(NULL);
@@ -364,7 +364,7 @@ void handle_mode_options() {
   uint8_t cur_mode = 0;
   
   while (1) {
-    cur_mode = handle_select_mode(S_MODE_OPTIONS, ppitems, 8, cur_mode);
+    cur_mode = handle_select_mode(S_MODE_OPTIONS, ppitems, sizeof(ppitems)/sizeof(ppitems[0]), cur_mode);
     switch (cur_mode) {
       case OPTION_MACHINE_TYPE:
       {
@@ -454,7 +454,7 @@ void main_menu(FILINFO* pfile_info) {
   }
 
   while (1) {
-    cur_mode = handle_select_mode(S_SELECT_MODE, ppitems, 3, cur_mode);
+    cur_mode = handle_select_mode(S_SELECT_MODE, ppitems, sizeof(ppitems)/sizeof(ppitems[0]), cur_mode);
     switch (cur_mode) {
       case MODE_PLAY:
         handle_play_mode(pfile_info);
