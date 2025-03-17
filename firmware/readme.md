@@ -1,5 +1,7 @@
 # Firmware
 
+Some notes on the Tapuino firmware.
+
 
 ## My findings
 
@@ -39,6 +41,21 @@
 
 - I bumped the version from 2.10.0 to 2.11.0.
 
+
+
+## Uploading
+
+Upload failed at first. Forgot my nano has an "old" bootloader.
+
+![bootloader](bootloader.png)
+
+
+Memory usage is relatively low
+
+```
+Sketch uses 26868 bytes (87%) of program storage space. Maximum is 30720 bytes.
+Global variables use 1608 bytes (78%) of dynamic memory, leaving 440 bytes for local variables. Maximum is 2048 bytes.
+```
 
 
 (end)
