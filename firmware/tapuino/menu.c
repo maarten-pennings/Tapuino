@@ -176,13 +176,15 @@ void handle_record_mode_ready(char* pfile_name) {
 }
 
 uint8_t handle_manual_filename(FILINFO* pfile_info) {
-  uint8_t cur_char_pos = 0;
-  uint8_t cursor_pos = 0;
+  uint8_t cur_char_pos = 9; // index into array of allowed chars S_FILENAME_CHARS; char shown at cursor
+  uint8_t cursor_pos = 0; // cursor index into filename pfile_info->lfname
   uint8_t max_chars = strlen_P(S_FILENAME_CHARS);
-  uint8_t cur_char = 0;
+  uint8_t cur_char = pgm_read_byte(S_FILENAME_CHARS + cur_char_pos); // S_FILENAME_CHARS[cur_char_pos]
   lcd_title_P(S_ENTER_FILENAME);
   lcd_status("");
   lcd_cursor();
+  lcd_setCursor(0, 1);
+  lcd_write(cur_char);
   lcd_setCursor(0, 1);
   
   // start with a nicely terminated string!
@@ -196,7 +198,11 @@ uint8_t handle_manual_filename(FILINFO* pfile_info) {
           pfile_info->lfname[cursor_pos] = cur_char;        
           cursor_pos++;
           lcd_setCursor(cursor_pos, 1);
-          cur_char_pos = 0;
+        //cur_char_pos = 0;
+          cur_char_pos = strchr_P(S_FILENAME_CHARS,pgm_read_byte(S_FILENAME_NEXTS+cur_char_pos)) - S_FILENAME_CHARS;
+          cur_char = pgm_read_byte(S_FILENAME_CHARS + cur_char_pos);
+          lcd_write(cur_char);
+          lcd_setCursor(cursor_pos, 1);
         }
       break;
       case COMMAND_SELECT_LONG:

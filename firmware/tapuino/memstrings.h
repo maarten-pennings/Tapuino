@@ -11,6 +11,7 @@ extern const char S_REC_MODE_MANUAL[];
 extern const char S_REC_MODE_AUTO[];
 extern const char S_ENTER_FILENAME[];
 extern const char S_FILENAME_CHARS[];
+extern const char S_FILENAME_NEXTS[];
 
 extern const char S_STARTINGINIT[];
 extern const char S_INITI2COK[];

@@ -41,6 +41,10 @@ Some notes on the Tapuino firmware.
 
 - I bumped the version from 2.10.0 to 2.11.0.
 
+- Added character prediction to manual [file name entry](https://github.com/maarten-pennings/Tapuino/blob/main/firmware/tapuino/menu.c#L178).
+  See also [next char](https://github.com/maarten-pennings/Tapuino/blob/main/firmware/tapuino/memstrings-neutral.c#L7) definition.
+  
+- I bumped the version from 2.11.0 to 2.12.0.
 
 
 ## Uploading
