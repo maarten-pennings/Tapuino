@@ -36,6 +36,10 @@ I tried to follow the layout of the original datasette: big buttons at the front
 the tape (LCD) in the center; tape counter (2 LEDs) on the center right; nothing and the back 
 except the cable to the C64.
 
+QR code to this repo for on the PCB.
+
+![tapuino QR](tapuino.png)
+
 I made a couple of changes in the v1.5 Layout
 - Moved the right holes SD card a bit to the left
 - Moved the contrast hole up.
