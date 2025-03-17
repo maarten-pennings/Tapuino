@@ -11,7 +11,7 @@ const char S_REC_MODE_MANUAL[] PROGMEM = "Manual";
 const char S_REC_MODE_AUTO[] PROGMEM = "Auto";
 const char S_ENTER_FILENAME[] PROGMEM = "Enter name";
 
-const char S_INIT[] PROGMEM = "Init...";
+const char S_INIT[] PROGMEM = "Tapuino";
 const char S_INIT_FAILED[] PROGMEM = "Init failed!";
 const char S_INIT_OK[] PROGMEM = "Init OK.";
 

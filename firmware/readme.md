@@ -46,6 +46,10 @@ Some notes on the Tapuino firmware.
   
 - I bumped the version from 2.11.0 to 2.12.0.
 
+- Changed startup message from `INIT... V: 2.12.0` to `Tapuino 2.12.0`
+
+- I bumped the version from 2.11.0 to 2.13.0.
+
 
 ## Uploading
 
@@ -61,5 +65,11 @@ Sketch uses 26868 bytes (87%) of program storage space. Maximum is 30720 bytes.
 Global variables use 1608 bytes (78%) of dynamic memory, leaving 440 bytes for local variables. Maximum is 2048 bytes.
 ```
 
+In 2.12.13
+
+```
+Sketch uses 26990 bytes (87%) of program storage space. Maximum is 30720 bytes.
+Global variables use 1608 bytes (78%) of dynamic memory, leaving 440 bytes for local variables. Maximum is 2048 bytes.
+```
 
 (end)
