@@ -2,6 +2,8 @@
 
 My take on the famous Tapuino; "The $20 C64 Tape Emulator".
 
+![Tapuino](assembly/WithCable.jpg)
+
 
 ## Introduction
 
@@ -70,12 +72,10 @@ There were some errors in the V1 PCB that had to be patched; see [pcb section](p
 ## Software
 
 Due to all dangling links, I was afraid the Tapuino [sources](https://github.com/sweetlilmre/tapuino) might disappear. 
-I decided to clone the [firmware](firmware).
+I decided to clone the [firmware](firmware), and made minor changes.
+The biggest change is character prediction when editing (SAVE) filenames.
+I did a bit of statistical counting, see [charcount](charcount).
 
-
-Edit the configuration in [config-user.h](firmware/config-user.h).
-
-There is also runtime options
 
 
 ## Case

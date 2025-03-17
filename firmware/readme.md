@@ -15,12 +15,16 @@ Some notes on the Tapuino firmware.
 
 - Lowercase `m` on the LCD means waiting for motor power by C64.
   Uppercase `M` means C64 powers the motor.
+  
+- The main menu also has "options" configuration.
 
 
 
 ## My changes
 
 - I changed all sources to have uniform line endings.
+
+- I added my configuration in [config-user.h](config-user.h).
 
 - Suppressed a [warning ](https://github.com/maarten-pennings/Tapuino/blob/main/firmware/tapuino/ccsbcs_avr.c#L9).
 
@@ -53,7 +57,7 @@ Some notes on the Tapuino firmware.
 
 ## Uploading
 
-Upload failed at first. Forgot my nano has an "old" bootloader.
+Upload failed at first. Forgot my Nano has an "old" bootloader.
 
 ![bootloader](bootloader.png)
 
