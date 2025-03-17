@@ -69,7 +69,7 @@ There were some errors in the V1 PCB that had to be patched; see [pcb section](p
 
 ## Software
 
-Due to all dangling links, I was afraid the Tapuino sources might disappear, so 
+Due to all dangling links, I was afraid the Tapuino [sources](https://github.com/sweetlilmre/tapuino) might disappear. 
 I decided to clone the [firmware](firmware).
 
 
