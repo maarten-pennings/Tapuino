@@ -77,8 +77,7 @@ I did a bit of statistical counting, see [charcount](charcount).
 
 ## Case
 
-I did design a "sleeve" for the connector.
-The case for the Tapuino itself is not yet done.
+I did design a "sleeve" for the connector, and a 3-part shell for the itself.
 See [case](case).
 
 
