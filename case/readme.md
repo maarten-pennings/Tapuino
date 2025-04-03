@@ -20,7 +20,15 @@ The [stl](sleeve-square.stl) is in the repo.
 
 ## Tapuino Case
 
-todo
+I also made a casing for the Tapuino itself.
+I wanted it to look like the original datasette.
+
+This is the result of a couple of evenings with Fusion 360.
+
+![shell](shell.png)
+
+It consists of a [top half](ShellTop.stl) and a [bottom half](ShellBot.stl).
+The top half has a black [inlay](Inlay.stl).
 
 
 (end)
