@@ -30,5 +30,10 @@ This is the result of a couple of evenings with Fusion 360.
 It consists of a [top half](ShellTop.stl) and a [bottom half](ShellBot.stl).
 The top half has a black [inlay](Inlay.stl).
 
+I made prototypes with my 3D printer, but then ordered at [JLCPCB](https://jlcpcb.com/DMP).
+I did got for low(est) cost in material and shipping: €17.30.
+
+![total cost](totalcost.png)
+
 
 (end)

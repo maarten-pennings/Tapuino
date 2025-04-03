@@ -68,6 +68,8 @@ The final [gerber](Tapuino-gerber-v1.5.zip) was sent to [JLCPCB](https://jlcpcb.
 Manufacturing in 2 days for €1.85 for 5 PCBs. There was 15-day shipping for €1.63, but I opted for
 a faster one €6.94.
 
+![PCB cost](pcbcost.png)
+
 I ordered on Friday, they arrived at my house (The Netherlands) the next Thursday - four working days.
 
 
