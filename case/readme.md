@@ -36,4 +36,19 @@ I did got for low(est) cost in material and shipping: €17.30.
 ![total cost](totalcost.png)
 
 
+Unfortunately, I got a mail from JLCPCB:
+
+> Due to the geometry of this workpiece, there is a high risk of deformation.
+> Usually, for flat parts, frame parts, enclosures with no strong ribs inside, and large unoccupied areas parts, long parts and the models could shrink to the center and warping to the diagonal lines and edges.
+> Could you please confirm if the risks are acceptable for you?
+
+I decided to add some ribs; to the [top half](ShellTop2.stl), the [bottom half](ShellBot2.stl), and even to the [inlay](Inlay2.stl),
+and to resubmit my order.
+
+Again, I did got for low(est) cost in material and shipping, but more plastic, €1.50 higher cost:
+
+![total cost v2](totalcost2.png)
+
+
+
 (end)
