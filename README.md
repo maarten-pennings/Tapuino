@@ -1,9 +1,13 @@
 # Tapuino
 
-My take on the famous Tapuino; "The $20 C64 Tape Emulator".
+My take on the famous Tapuino; "The $20 C64 Tape Emulator". 
+Below we see the assembled PCB, the encased pcb, and again next to the datasette.
 
 ![Tapuino](assembly/WithCable.jpg)
 
+![Tapuino alone](case/alone.jpg)
+
+![Tapuino side by side with datasette](case/sidebyside.jpg)
 
 ## Introduction
 
@@ -66,20 +70,26 @@ There were some errors in the V1 PCB that had to be patched; see [pcb section](p
 
 > **Warning** Peter Edwards writes on his GitHub: This project is now in maintenance mode and has been superseded by the Tapuino Next.
 
-And indeed, there are multiple dangling links, for example to Peter's video, and to his blog. I did find a [2014 blog](https://sweetlilmre.blogspot.com/2014/07/tapuino-20-c64-tape-emulator.html)
+And indeed, there are multiple dangling links, for example to Peter's video, and to his blog. 
+I did find a [2014 blog](https://sweetlilmre.blogspot.com/2014/07/tapuino-20-c64-tape-emulator.html)
 
 Due to all dangling links, I was afraid the Tapuino [sources](https://github.com/sweetlilmre/tapuino) might disappear. 
-I decided to clone the [firmware](firmware), and made minor changes.
+I decided to clone the [firmware](firmware), and I made some changes.
 The biggest change is character prediction when editing (SAVE) filenames.
 I did a bit of statistical counting, see [charcount](charcount).
-
+The first checkin in my repo is the original - without my changes.
 
 
 ## Case
 
 I did design a "sleeve" for the connector, and a 3-part shell for the itself.
+The connector was printed at home with a filament printer, the 3-part shell at JLCPCB using SLA printer.
 See [case](case).
 
+## Cost
+
+Overall cost is 30 euros. The most expensive part is the casing; without that the Tapuino 
+costs just over 10 euros. See [costs](costs).
 
 
 (end)

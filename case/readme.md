@@ -1,4 +1,4 @@
-# Case
+# Tapuino case
 
 This directory contains the 3D printing files.
 
@@ -31,7 +31,7 @@ It consists of a [top half](ShellTop.stl) and a [bottom half](ShellBot.stl).
 The top half has a black [inlay](Inlay.stl).
 
 I made prototypes with my 3D printer, but then ordered at [JLCPCB](https://jlcpcb.com/DMP).
-I did got for low(est) cost in material and shipping: €17.30.
+I did go for low(est) cost in material and shipping: €17.30.
 
 ![total cost](totalcost.png)
 
@@ -50,5 +50,12 @@ Again, I did got for low(est) cost in material and shipping, but more plastic, �
 ![total cost v2](totalcost2.png)
 
 
+
+## Result
+
+
+![Tapuino alone](alone.jpg)
+
+![Tapuino side by side with datasette](sidebyside.jpg)
 
 (end)

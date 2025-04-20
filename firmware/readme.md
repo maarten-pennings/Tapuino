@@ -1,4 +1,4 @@
-# Firmware
+# Tapuino firmware
 
 Some notes on the Tapuino firmware.
 
@@ -6,7 +6,7 @@ Some notes on the Tapuino firmware.
 ## My findings
 
 - The UI also has a COMMAND_SELECT_LONG and COMMAND_ABORT_LONG.
-  They are especially relevant in manual filename entry.
+  They are especially relevant in manual filename entry (for SAVE)
   
   - Short SELECT means start editing next character.
   - Long SELECT means select character, stop entering characters, start recording the file.
@@ -35,13 +35,11 @@ Some notes on the Tapuino firmware.
   The "system" was needed because windows creates a some funny system directory each time I plug in the SD card in my system.
   I added  "hidden" because this allows me to add some files (documentation, images) that I do not want to pop up in the Tapuino browser.
 
-- Replaced hard-coded sizes with expression (eg [`sizeof(ppitems)/sizeof(ppitems[0])`](https://github.com/maarten-pennings/Tapuino/blob/main/firmware/tapuino/menu.c#L266)
-  and line [357](https://github.com/maarten-pennings/Tapuino/blob/main/firmware/tapuino/menu.c#L367), and 
-  [457](https://github.com/maarten-pennings/Tapuino/blob/main/firmware/tapuino/menu.c#L457)).
+- Replaced hard-coded sizes with expression (eg [`sizeof(ppitems)/sizeof(ppitems[0])`](https://github.com/maarten-pennings/Tapuino/blob/main/firmware/tapuino/menu.c#L272)
+  and line [373](https://github.com/maarten-pennings/Tapuino/blob/main/firmware/tapuino/menu.c#L373), and 
+  [463](https://github.com/maarten-pennings/Tapuino/blob/main/firmware/tapuino/menu.c#L463)).
 
 - I was confused by `TAPE_READ_LOW` which sometimes referred to a LED. Changed that to [signal](https://github.com/maarten-pennings/Tapuino/blob/main/firmware/tapuino/tapuino.c#L453).
-
-- Added my `config-user.h`.
 
 - I bumped the version from 2.10.0 to 2.11.0.
 
@@ -69,7 +67,7 @@ Sketch uses 26868 bytes (87%) of program storage space. Maximum is 30720 bytes.
 Global variables use 1608 bytes (78%) of dynamic memory, leaving 440 bytes for local variables. Maximum is 2048 bytes.
 ```
 
-In 2.12.13
+In 2.12/13
 
 ```
 Sketch uses 26990 bytes (87%) of program storage space. Maximum is 30720 bytes.
