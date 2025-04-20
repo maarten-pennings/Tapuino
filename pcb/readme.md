@@ -18,11 +18,14 @@ than 50 cent (35 for the two buzzers, 6 for the mute button and some cents for t
 resistors and transistors). If you don't want sound, you can skip this part of the
 schematics.
 
+
+## Errors
+
 I made a couple of errors in the V1 design that are fixed in the V1.5 design
 - SCL/SDA were swapped on the Arduino Nano.
   This was patched by replacing two pins in the pin header of the LCD by wires and crossing those.
 - Pins 1/2 and 3/4 were swapped on the optocoupler (U2).
-  This was patched by placing the optocoupler upside down (bedning all pins 180 degrees).
+  This was patched by placing the optocoupler upside down (bending all pins 180 degrees).
 - Green LED (L1MOT) was too bright.
   Changed R5 from 330 Ω to 680 Ω.
 
