@@ -76,7 +76,9 @@ for the bulk goods and it assumes the overshoot parts are useful for another pro
 | PCB                   | (5 piecs with shipping)     | 1         | €  2.13 |
 | Casing 3 parts        | (with shipping)             | 1         | € 18.78 |
 |                       |                             |           |         |
-|                       |                             |           | € 30.74 |
+| SD card               |                             | 1         | €  2.28 |
+|                       |                             |           |         |
+|                       |                             |           | € 33.02 |
 
 The casing is by far the most expensive part, which you don't need. 
 If you want to reduce more, you could consider removing all three LEDs, 

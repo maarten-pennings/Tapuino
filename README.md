@@ -89,8 +89,8 @@ See [case](case).
 
 ## Cost
 
-Overall cost is 30 euros. The most expensive part is the casing; without that the Tapuino 
-costs just over 10 euros. See [costs](costs).
+Overall cost is 35 euros. The most expensive part is the casing; without that the Tapuino 
+costs just over 15 euros. See [costs](costs).
 
 
 (end)
