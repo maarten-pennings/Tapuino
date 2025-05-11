@@ -74,15 +74,15 @@ I friend wanted one, so I made some changes to V2.
 
 Here are the (renders of the parts), the bottom half ([STL](ShellBot3.stl)), the top half ([STL](ShellTop3.stl)), and the inlay ([STL](Inlay3.stl)).
 
-![Bottom half](ShellBot3.png)
+![Bottom half V3](ShellBot3.png)
 
-![Top half](ShellTop3.png)
+![Top half V3](ShellTop3.png)
 
-![Inlay](Inlay3.png)
+![Inlay V3](inlay3.png)
 
 This is the render of the assembly.
 
-![shell](shell3.png)
+![Shell V3](shell3.png)
 
 
 (end)
